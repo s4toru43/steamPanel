@@ -1,5 +1,5 @@
 @echo off
-cd panel\server
-node index.js
-cd panel\client
-npm run dev
+cd /d "%~dp0server"
+start node index.js
+cd /d "%~dp0client"
+start npm run dev

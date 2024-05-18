@@ -9,30 +9,24 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
-  --primary-glow: conic-gradient(
-    from 180deg at 50% 50%,
-    #16abff33 0deg,
-    #0885ff33 55deg,
-    #54d6ff33 120deg,
-    #0071ff33 160deg,
-    transparent 360deg
-  );
-  --secondary-glow: radial-gradient(
-    rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
-  );
+  --primary-glow: conic-gradient(from 180deg at 50% 50%,
+      #16abff33 0deg,
+      #0885ff33 55deg,
+      #54d6ff33 120deg,
+      #0071ff33 160deg,
+      transparent 360deg);
+  --secondary-glow: radial-gradient(rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0));
 
   --tile-start-rgb: 239, 245, 249;
   --tile-end-rgb: 228, 232, 233;
-  --tile-border: conic-gradient(
-    #00000080,
-    #00000040,
-    #00000030,
-    #00000020,
-    #00000010,
-    #00000010,
-    #00000080
-  );
+  --tile-border: conic-gradient(#00000080,
+      #00000040,
+      #00000030,
+      #00000020,
+      #00000010,
+      #00000010,
+      #00000080);
 
   --callout-rgb: 238, 240, 241;
   --callout-border-rgb: 172, 175, 176;
@@ -74,72 +68,28 @@ main {
   margin-bottom: 20px;
 }
 
-.users {
+.panel {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-direction: row-reverse;
-  gap: 20px;
-  position: relative;
-
+  margin: 20px;
 }
-.users__other {
+
+.accounts {
+  margin-top: 8px;
+}
+
+.buttons {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  position: absolute;
-  right: -220px;
+}
 
+.buttons button,
+.buttons__upload {
+  margin: 8px;
 }
-.users__other button {
-  width: 200px;
-}
-.users__list td, .users__list th{
-  padding: 10px 40px;
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-.users__list {
-  border-radius: 5px;
-  border-color: white;
-  outline: inherit;
-  border-collapse: collapse;
-}
-.users__list-title {
-  background: brown;
-}
-.users__btn {
-  background: white;
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-	border: none;
-	cursor: pointer;
-	outline: inherit;
-  padding: 5px 35px;
-  transition: all .25s;
-  border: 1px solid transparent;
-}
-.users__btn:hover {
-  color: white;
-  background: transparent;
-  border-color: white;
-}
-.users__title {
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 40px;
-  color: white;
-}
-.user {
-  transition: all .25s;
-}
-.user.active {
-  background: rgb(0, 159, 40);
-}
-.user.used {
-  background: gray;
+
+.buttons__form {
+  display: flex;
+  flex-direction: column;
 }
